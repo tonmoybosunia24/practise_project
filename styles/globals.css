@@ -12,6 +12,7 @@
   --color-primary: #BFC1E8;
   --color-secondary: #E5E5EC;
   --color-tertiary: #555763;
+  --color-quaternary: #101118;
 }
 
 @layer utilities {
@@ -23,7 +24,7 @@
 
   /* ----------Section Spacing Utilities---------- */
   .mt-section { @apply mt-8 md:mt-12 lg:mt-20; }
-  .margin-section-lg { @apply my-20; }
+  .margin-section-lg { @apply py-20; }
 
   /* -----------linear Gradient Heading----------- */
   .text-hero-gradient {
