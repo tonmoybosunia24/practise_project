@@ -1,3 +1,5 @@
+import Count from "@/ui/Count";
+
 const AboutUs = () => {
   return (
     <section className="container my-40  flex justify-between gap-6">
@@ -15,15 +17,15 @@ const AboutUs = () => {
         {/* -------------------Statics Container------------------- */}
         <div className="flex justify-between text-lg">
           <div className="space-y-[30px]">
-            <h3 className=" text-[60px] text-center">100 +</h3>
+            <h3 className=" text-[60px] text-center"><Count start={0} end={100}></Count> +</h3>
             <p className="italic">Build live website</p>
           </div>
           <div className="border-x border-secondary space-y-[30px] px-10">
-            <h3 className=" text-[60px] text-center">50 +</h3>
+            <h3 className=" text-[60px] text-center"><Count start={0} end={50}></Count> +</h3>
             <p className="italic">clients worldwide</p>
           </div>
           <div className="space-y-[30px]">
-            <h3 className=" text-[60px] text-center">05 +</h3>
+            <h3 className=" text-[60px] text-center"><Count start={0} end={5}></Count> +</h3>
             <p className="italic">Years Of Experience</p>
           </div>
         </div>
