@@ -36,20 +36,20 @@ const WorkProcess = () => {
   ]
 
   return (
-    <section className="margin-section-lg bg-[linear-gradient(to_right_top,#141452,#0c1341,#0a1030,#080a1e,#010209)]">
+    <section className="py-[100px]  bg-[linear-gradient(to_right_top,#141452,#0c1341,#0a1030,#080a1e,#010209)]">
 
       {/* ----------------Section Heading------------------ */}
       <SectionHeading subtitle="/ WORK PROCESS" title=<>Your path to product <br />
         success starts here</>></SectionHeading>
 
       {/* -----------------Section Container---------------- */}
-      <div className="container px-24! pt-20 text-white">
+      <div className="px-5 md:px-9 lg:px-[189px] mx-auto w-full max-w-[1440px] text-white">
         {works.map((work, index) => (
 
           /* -------------------WorkProcess ----------------- */
-          <div key={work?.id} className={`flex justify-between items-center gap-10 ${index !== works.length - 1 ? 'border-b border-tertiary' : ''} py-5`}>
+          <div key={work?.id} className={`flex justify-between items-center gap-10 ${index !== works.length - 1 ? 'border-b border-tertiary' : ''} py-6 pb-10`}>
             <div className="flex-1 space-y-2">
-              <p className="w-fit border border-rounded border-gray-300 rounded-full px-3 py-1">Step {work?.id}</p>
+              <p className="w-fit border border-rounded border-gray-300 rounded-full text-[18px] px-[18px] py-2">Step {work?.id}</p>
               <h2 className="text-2xl">{work?.title}</h2>
             </div>
             <p className="flex-1 text-xl">{work?.description}</p>

@@ -8,14 +8,16 @@ const Hero = () => {
       {/* ---------------------NavBar------------------- */}
       <NavBar></NavBar>
       {/* -----------------Hero-Content----------------- */}
-      <div className="container mb-20 space-y-5">
-        <p className="w-fit text-lg border border-blue-300 rounded-full px-3 py-1">Check out the our services</p>
-        <h3 className="text-7xl text-hero-gradient bg-clip-text text-transparent">
+      <div className="container mb-[52px]">
+        <p className="w-fit text-[13px] uppercase tracking-wider font-medium px-6 py-2.5 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm">
+          Check out the our services
+        </p>
+        <h3 className="text-[70px] pt-5 pb-6 text-hero-gradient bg-clip-text text-transparent leading-tight">
           We Build <br />
           Products That <br />
           Empower Growth
         </h3>
-        <p className="text-xl text-secondary">Empower teams with smart engagement tools and insights <br /> anytime anywhere.</p>
+        <p className="text-[18px] text-[#F8F8FF]">Empower teams with smart engagement tools and insights <br /> anytime anywhere.</p>
       </div>
 
     </header>

@@ -19,7 +19,7 @@
 
   /* -------------Container Utilities------------- */
   .container {
-    @apply px-5 md:px-9 lg:px-9 mx-auto w-full max-w-screen-2xl;
+    @apply px-5 md:px-9 lg:px-20 mx-auto w-full max-w-[1440px];
   }
 
   /* ----------Section Spacing Utilities---------- */
@@ -33,13 +33,31 @@
 
   /* --------------Button Utilities--------------- */
   .button {
-    background: linear-gradient(180deg, #5969E2 0%, #3636D4 78.55%);
-    border: 1px solid;
-    border-image-source: linear-gradient(180deg, rgba(248, 248, 255, 0.3) 0%, rgba(248, 248, 255, 0) 100%);
-    border-image-slice: 1;  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 14px 20px;
     border-radius: 100px;
-    color: white; 
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    
+    /* transparent border jate gradient border dekhay */
+    border: 1px solid transparent;
+    
+    /* dual background: first = fill, second = border (SAME gradient colors) */
+    background-image:
+      linear-gradient(180deg, #5969E2 0%, #3636D4 78.55%),                              /* button fill */
+      linear-gradient(180deg, rgba(231, 231, 239, 0.719) 0%, rgba(180, 180, 233, 0) 100%); /* border gradient — color same */
+    
+    background-origin: padding-box, border-box;
+    background-clip: padding-box, border-box;
+    
+    transition: transform 0.12s ease;
+  }
+  
+  .button:hover {
+    transform: translateY(-1px);
   }
   
 }

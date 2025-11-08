@@ -22,12 +22,12 @@ const NavBar = () => {
 
       {/* ----------------Logo-Section---------------- */}
       <div>
-        <Image className='' width={200} height={100} src={logo} alt="Logo" />
+        <Image className='' width={166} height={28} src={logo} alt="Logo" />
       </div>
       {/* ----------------Menu-Section---------------- */}
-      <div className='flex items-center gap-5'>
+      <div className='flex items-center gap-[30px]'>
         {/* -----------------Menu Links--------------- */}
-        <ul className='flex gap-3'>
+        <ul className='flex gap-[30px]'>
           {navLinks.map(link => (
             <li key={link.id}>
               <Link href={link?.path} className={pathName === link?.path ? 'font-bold text-white' : 'text-gray-400'}>
@@ -37,7 +37,7 @@ const NavBar = () => {
           ))}
         </ul>
         {/* ------------------- Button----------------- */}
-        <button className='flex items-center gap-2 button'><LuCalendarClock /> Book A Call</button>
+        <a className='flex items-center gap-2 button'><LuCalendarClock /> Book A Call</a>
       </div>
 
     </nav>

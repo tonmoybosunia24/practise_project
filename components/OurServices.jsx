@@ -43,17 +43,17 @@ const services = [
 
 const OurServices = () => {
   return (
-    <section className="bg-black py-20">
+    <section className="bg-black py-[100px]">
       {/* -----------------Section-Heading--------------- */}
       <SectionHeading subtitle='/ WHAT WE DO' title=<>We Write Code That <br /> Understands Business</>></SectionHeading>
       {/* ----------------------Services----------------- */}
-      <div className="container grid grid-cols-3 gap-5 pt-20">
+      <div className="container grid grid-cols-3 gap-5">
         {services.map((service) => (
           /* ------------------Service Card--------------- */
-          <div className="bg-quaternary rounded-xl space-y-5 p-5" key={service?.id}>
+          <div className="bg-quaternary rounded-xl p-[30px]" key={service?.id}>
             <Image width={60} height={60} src={service?.icon} alt={service?.title} />
-            <h3 className="font-medium text-2xl text-white">{service?.title}</h3>
-            <p className="text-secondary">{service?.description}</p>
+            <h3 className="font-medium text-2xl text-white pt-[29px] pb-4">{service?.title}</h3>
+            <p className="text-secondary text-[18px]">{service?.description}</p>
           </div>
         ))}
       </div>

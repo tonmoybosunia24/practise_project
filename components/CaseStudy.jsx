@@ -24,7 +24,7 @@ const CaseStudy = () => {
   ]
 
   return (
-    <section className="margin-section-lg">
+    <section className="my-[120px]">
 
       {/* --------------------Section-Heading------------------- */}
       <SectionHeading
@@ -34,17 +34,17 @@ const CaseStudy = () => {
       ></SectionHeading>
 
       {/* -------------------Section-Container------------------ */}
-      <div className="container flex justify-between items-center gap-10 mt-10">
+      <div className="container flex justify-between items-center gap-6">
         {ceses.map((caseItem) => (
           /* -------------------CaseStudy Card------------------- */
           <div key={caseItem?.id}>
-            <img width={100} height={100} className="w-full" src={caseItem?.banner} alt={caseItem?.title} />
-            <h3 className="font-semibold text-2xl text-black mt-5">{caseItem?.title}</h3>
-            <p className="text-tertiary mt-2">{caseItem?.description}</p>
+            <img width={411} height={412} className="w-full" src={caseItem?.banner} alt={caseItem?.title} />
+            <h3 className="text-2xl text-black pt-[30px] pb-4">{caseItem?.title}</h3>
+            <p className="text-tertiary">{caseItem?.description}</p>
           </div>
         ))}
       </div>
-    
+
     </section>
   );
 };

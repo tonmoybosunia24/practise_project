@@ -8,14 +8,16 @@ const Footer = () => {
       {/* -------------------Footer Container------------------- */}
       <div className='container margin-section-lg'>
         {/* -----------------------Footer-Top------------------- */}
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between pb-10'>
           {/* ---------------------Left-Side-------------------- */}
-          <div className='space-y-7 pb-14 text-lg'>
-            <Image src={logo} alt="Logo" />
-            <p className='text-tertiary'>472B,Olivia Four, Rangpur <br />
-              80-309 Gdansk, Bangladesh
-            </p>
-            <p>blackdevs@agency</p>
+          <div className='flex flex-col justify-between text-lg'>
+            <div>
+              <Image width={166} height={28} src={logo} alt="Logo" />
+              <p className='text-tertiary mt-[30px] mb-5'>472B,Olivia Four, Rangpur <br />
+                80-309 Gdansk, Bangladesh
+              </p>
+              <p>blackdevs@agency</p>
+            </div>
             <div className='flex gap-5'>
               <Link className='border-b' href="">Linkedin</Link>
               <Link className='border-b' href="">Instagram</Link>
@@ -54,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
         {/* ---------------------Footer-Bottom------------------ */}
-        <div className='pt-5 border-t border-t-[#F8F8FF/12] text-tertiary text-center'><p>©2025 BlackDevs, All rights reserved.</p></div>
+        <div className='pt-[25px] border-t border-t-[#F8F8FF/12] text-tertiary text-center'><p>©2025 BlackDevs, All rights reserved.</p></div>
       </div>
     </footer>
   );
