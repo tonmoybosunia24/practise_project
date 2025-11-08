@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Idea from "@/components/Idea";
 import OurServices from "@/components/OurServices";
 import WorkProcess from "@/components/WorkProcess";
+import ScrollNavbarTrigger from "@/ui/ScrollNavbarTrigger";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Experience></Experience>
       <Idea></Idea>
       <Footer></Footer>
+      <ScrollNavbarTrigger></ScrollNavbarTrigger>
     </main>
   );
 }
