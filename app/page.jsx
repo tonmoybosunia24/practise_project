@@ -1,6 +1,7 @@
 import AboutUs from "@/components/AboutUs";
 import CaseStudy from "@/components/CaseStudy";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Idea from "@/components/Idea";
 import OurServices from "@/components/OurServices";
@@ -16,6 +17,7 @@ export default function Home() {
       <WorkProcess></WorkProcess>
       <Experience></Experience>
       <Idea></Idea>
+      <Footer></Footer>
     </main>
   );
 }
