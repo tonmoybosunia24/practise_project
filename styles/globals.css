@@ -65,5 +65,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
+  font-family: var(--font-archivo, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif);
 }
